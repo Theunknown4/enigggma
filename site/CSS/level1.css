@@ -1,7 +1,7 @@
-/* MAIN PAGINA */
-/*
 body
 {
+    background-color: black;
+    color: white;
     font-family: 'Georgia', serif;
     text-align: center;
     margin: 0;
@@ -15,26 +15,6 @@ body
     position: relative;
     user-select: none;
     transition: background-color 2s ease-in-out;
-}
-*/
-
-/* INDEX */
-
-body.welcomeText
-{
-    display: flex;
-}
-
-.welcomeText
-{
-    justify-content: flex-start;
-}
-
-/* LVL 1 */
-/* body.LVL1
-{
-    background-color: black;
-    color: white;
 }
 
 .star 
@@ -74,7 +54,7 @@ body.welcomeText
     width: 100%;
     height: 100%;
     overflow: hidden;
-    user-select: text;
+    user-select: text; /* Permette la selezione anche da mobile */
 }
 
 #lvl1Title 
@@ -116,51 +96,9 @@ body.welcomeText
     align-items: center;
     flex-direction: column;
     color: white;
-} */
-
-/* LVL 2 */
-/*body.LVL2
-{
-    background-color: white;
-    color: black;
 }
 
-#lvl2Title 
-{
-    font-weight: bold;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    transition: color 2s ease-in-out;
-}
-
-.morse-text 
-{
-    color: white;
-    opacity: 0;
-    user-select: text;
-    font-size: 7px;
-    line-height: 1.5;
-}
-
-#secretInputLVL2
-{
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid black;
-    color: black;
-    font-size: 1em;
-    padding: 10px;
-    margin-top: 20px;
-    width: 250px;
-    text-align: center;
-    border-radius: 5px;
-    z-index: 1;
-    transition: all 1s ease-in-out;
-} */
-
-/* CONDIVISE */
-/*
+/* SHARED BETWEEN LEVELS*/
 #message 
 {
     margin-top: 20px;
@@ -186,4 +124,3 @@ body.welcomeText
     20%, 60% { transform: translateX(-5px); }
     40%, 80% { transform: translateX(5px); }
 }
-*/

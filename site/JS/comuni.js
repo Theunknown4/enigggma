@@ -31,7 +31,7 @@ async function changeLevel(level)
     if (level === -1)
         window.location.href = `HTML/Level1.html`;
     else
-        changeLevel(level);
+        window.location.href = `Level${level}.html`;
 }
 
 function setMessage(messageElement, text, className = '', color = '')
@@ -44,6 +44,7 @@ function setMessage(messageElement, text, className = '', color = '')
 // Anti-inspector
 function setupProtections()
 {
+    /*
     document.addEventListener('contextmenu', function (e)
     {
         e.preventDefault();
@@ -62,6 +63,8 @@ function setupProtections()
             return false;
         }
     });
+    */
+   alert("Protections Disabled");
 }
 
 // Generazione stelle condivisa

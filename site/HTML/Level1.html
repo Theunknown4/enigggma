@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Livello 1</title>
+
+    <!-- Questo script viene eseguito SUBITO per aggiungere il base PRIMA di ogni altro link -->
     <script>
-        console.log(location);
-    if (location.hostname === "theunknown4.github.io")
-    {
-        const base = document.createElement("base");
-        base.href = "/enigggma/";
-        document.head.appendChild(base);
-    }
+        if (location.hostname === "theunknown4.github.io")
+        {
+            const base = document.createElement("base");
+            base.href = "/enigggma/site/HTML/";
+            document.head.appendChild(base);
+        }
     </script>
+
     <link rel="stylesheet" href="../CSS/level1.css">
     <script src="../JS/comuni.js" defer></script>
     <script src="../JS/level1.js" defer></script>
